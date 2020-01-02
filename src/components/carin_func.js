@@ -1,6 +1,7 @@
 import React from "react";
 
 const Carin2 = props => {
+  console.log(props.list);
   return (
     <div
       style={{
@@ -11,28 +12,14 @@ const Carin2 = props => {
       }}
     >
       <h2>Stateless/Functional Component</h2>
-      <div>
-        <input
-          style={{ margin: "10px" }}
-          placeholder="Enter Email"
-          value={props.email}
-          /* onChange={emailChanged.bind(this)} */
-        />
+      <div className="shopping-list">
+        <h4>Shopping List for {props.item}</h4>
+        <ul>
+          {props.list.map(value => {
+            return <li key={value}>{value}</li>;
+          })}
+        </ul>
       </div>
-      <div>
-        <input
-          style={{ margin: "10px" }}
-          placeholder="Enter Password"
-          value={props.password}
-          /* onChange={passwordChanged.bind(this)} */
-        />
-      </div>
-      <button
-        style={{ margin: "10px" }}
-        /* onClick={handleClick.bind(this)} */
-      >
-        Increment
-      </button>
     </div>
   );
 };
