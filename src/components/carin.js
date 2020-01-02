@@ -10,7 +10,7 @@ class Carin extends Component {
       <div
         style={{
           padding: "10px",
-          fontSize: "15px",
+          fontSize: "20px",
           textAlign: "center",
           backgroundColor: "#fff"
         }}
