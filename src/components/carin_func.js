@@ -16,7 +16,7 @@ const Carin2 = props => {
           style={{ margin: "10px" }}
           placeholder="Enter Email"
           value={props.email}
-          /* onChange={emailChanged.bind(this)} */
+          
         />
       </div>
       <div>
