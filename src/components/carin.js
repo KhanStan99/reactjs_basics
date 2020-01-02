@@ -19,7 +19,7 @@ class Carin extends Component {
         <div>
           <input
             style={{ margin: "10px" }}
-            placeholder="Enter Email"
+            placeholder="Enter Email here"
             value={this.state.email}
             onChange={this.emailChanged.bind(this)}
           />
