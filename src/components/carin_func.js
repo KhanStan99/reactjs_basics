@@ -16,7 +16,7 @@ const Carin2 = props => {
         <h4>Shopping List for {props.item}</h4>
         <ul>
           {props.list.map(value => {
-            return <li key={value}>{value}</li>;
+            return <li key={value}>{value} </li>;
           })}
         </ul>
       </div>
